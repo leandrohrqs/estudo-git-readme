@@ -52,7 +52,7 @@
 
 - É um **serviço para gerenciar repositórios**, gratuito e amplamente utilizado;
 
-- Podemos **enviar nossos projetos** para o GitHub e disponibilizá-lo para outros devs;
+- Podemos **enviar nossos projetos** para o GitHub e disponibilizá-lo para outros desenvolvedores;
 
 - O GitHub é gratuito tanto para projetos públicos como **privados**;
 
@@ -66,6 +66,23 @@
 
 3. Utilize o `git commit -m "first commit"` para criar um commit no seu repositório Git com a mensagem que desejar dentro dos aspas.
 '
-4. Utilize' o comando `git remote add origin https://github.com/seu-usuario/nome-do-repositorio.git` para linkar o repositório no GitHub com o repositório local
+4. Utilize o comando `git remote add origin https://github.com/seu-usuario/nome-do-repositorio.git` para sincronizar o repositório no GitHub com o repositório local
 
 5. Por fim, utilize o `git push -u origin master` para subir o seu projeto ao GitHub.
+
+## Verificando mudanças no projeto
+
+- As mudanças do projeto podem ser verificados por: **`git status`**;
+
+- Aqui serão mapeadas todas as alterações do projeto;
+
+- Como: **arquivos não monitorados** e **arquivos modificados**;
+
+- Podemos também dizer a **diferença** do que já está enviado ao servidor ou salvo no projeto;
+
+## Recebendo as mudanças
+- É comum também ter que **sincronizar o local** com as mudanças do remoto;
+
+- Esta ação é feita pelo **`git pull`**;
+
+- Após o comando serão **buscadas atualizações**, se encontradas elas **serão unidas ao código atual** existente na nossa máquina;
