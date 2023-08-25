@@ -123,7 +123,7 @@
 
 - O arquivo anterior é excluído;
 
-- ## Desfazendo alterações
+## Desfazendo alterações
 
 - O arquivo modificado pode ser **retornado ao estado original**;
 
@@ -142,3 +142,21 @@
 - Nele podemos inserir todos os arquivos que nao devem entrar no versionamento;
 
 - Isso é útil para **arquivos gerados automaticamente** ou arquivos que contêm **informações sensíveis**;
+
+## Desfazendo todas as alterações
+
+- Com o comando **`git reset`** podemos resetar todas as mudanças feitas;
+
+- Geralmente é utilizado com a flag **`--hard`**
+
+- Todas as alterações **commitadas** e **também as pendentes** serão **excluídas**;
+
+## O que é um branch
+
+- Branch é a forma que o git **separa as versões dos projetos**;
+
+- Quando um projeto é criado ele inicia na branch **master** ou **main**;
+
+- Geralmente cada nova feature de um projeto **fica em um branch separado**;
+
+- Após a finalização das alterações os **branchs são unidos** para ter o código-fonte final; 
