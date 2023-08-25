@@ -86,3 +86,59 @@
 - Esta ação é feita pelo **`git pull`**;
 
 - Após o comando serão **buscadas atualizações**, se encontradas elas **serão unidas ao código atual** existente na nossa máquina;
+
+## Clonando repositórios
+
+- O ato de baixar um repositório de um servidor remoto é chamado de **clonar repositório**;
+
+- Para esta ação utilizamos o **`git clone`**
+
+- Este comando é utilizado quando **entramos em um novo projeto**;
+
+## Removendo arquivos
+
+- Os arquivos **podem ser deletados da monitoração** do git;
+
+- O comando para deletar é **`git rm`**
+
+- Após deletar um arquivo do git ele não terá mais suas atualizações consideradas pelo git;
+
+- Apenas quando for adicionando novamente pelo **`git add`**
+
+## Histórico de alterações
+
+- Podemos **acessar um log** de modificações feitas no projeto;
+
+- O comando para este recurso é **`git log`**;
+
+- Você receberá uma informação dos **commits realizados** no projeto até então;
+
+## Renomeando arquivos
+
+- Com o comando **`git mv`** podemos renomear um arquivo;
+
+- O mesmo também pode ser movido para outra pasta;
+
+- E isso fará com que este novo arquivo **seja monitorado pelo git**;
+
+- O arquivo anterior é excluído;
+
+- ## Desfazendo alterações
+
+- O arquivo modificado pode ser **retornado ao estado original**;
+
+- O comando utilizado é o **`git checkout`**;
+
+- Após a utilização do mesmo o arquivo sai do staging;
+
+- Caso seja feita uma próxima alteração, ele entra em staging novamente;
+
+## Ignorando arquivos no projeto
+
+- Uma técnica muito utilizada é **ignorar arquivos no projeto;
+
+- Devemos inserir um arquivo chamado **.gitignore** na raiz do projeto;
+
+- Nele podemos inserir todos os arquivos que nao devem entrar no versionamento;
+
+- Isso é útil para **arquivos gerados automaticamente** ou arquivos que contêm **informações sensíveis**;
