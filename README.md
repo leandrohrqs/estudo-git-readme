@@ -159,4 +159,80 @@
 
 - Geralmente cada nova feature de um projeto **fica em um branch separado**;
 
-- Após a finalização das alterações os **branchs são unidos** para ter o código-fonte final; 
+- Após a finalização das alterações os **branchs são unidos** para ter o código-fonte final;
+
+## Criando e visualizando os branches
+
+- Para visualizar os branch disponíveis, basta digitar **`git branch`**;
+
+- Para criar um branch, você precisa utilizar o comando **`git branch <nome>`**;
+
+## Deletando branches
+
+- Podemos deletar um branch com a flag **`-d`** ou **`--delete`**;
+
+- Exemplo: **`git branch -d <nome-da-branch>`**
+
+- **Não é comum deletar um branch**, normalmente guardamos os histórico do trabalho;
+
+- Geralmente se usa o delete quando o branch foi criado errado;
+
+## Mundando de branch
+
+- Podemos mudar para outro branch utilizando o comando **`git checkout <nome-da-branch>`**;
+
+- Podemos criar um branch e mudar para ele no mesmo comando apenas adicionando a flag **`-b`** antes do nome da branch;
+
+- Exemplo: **`git checkout -b <nome-da-branch>`**
+
+## Unindo branches
+
+- O código de dois branches distintos pode ser unido pelo comando **`git merge <nome>`**;
+
+- Normalmente é por ele que recebemos as atualizações de outros devs;
+
+## Stash
+
+- Podemos salvar as modificações atuais **para prosseguir com uma outra abordagem de solução** e não perder o código;
+
+- O comando para esta ação é o **`git stash`**;
+
+- Após o comando o branch será resetado para a sua versão de acordo com o repositório;
+
+## Recuperando stash
+
+- Podemos verificar as stashs criadas pelo comando **`git stash list`**;
+
+- Também podemos recuperar a stash com o comando **`git stash <nome>`**;
+
+- Desta maneira podemos continuar de onde paramos com os arquivos adicionados a stash;
+
+## Removendo a stash
+
+- Para limpar totalmente as stash de um branch podemos utilizar o comando **`git stash clear`**;
+
+- Caso seja necessário deletar uam stash específica podemos utilizar o comando **`git stash drop <nome>`;
+
+## Criando tags
+
+- Podemos criar tags nos branches por meio do comando **`git tag -a <nome> -m "<msg>"`
+
+- A tag é diferente do stash, serve como um **checkpoint de um branch**;
+
+- É utilizada para demarcar estágios do desenvolvimento de algum recurso;
+
+## Alterando a tag
+
+- Podemos verificar uma tag com o comando **`git show <nome-tag>`**
+
+- Podemos trocar de tags com o comando **`git checkout <nome-tag>`**
+
+- Desta maneira podemos retroceder ou avançar em checkpoints de um branch;
+
+## Enviando e compartilhando tags
+
+- As tags podem ser **enviadas para o repositório de código** sendo compartilhada entre os devs;
+
+- O comando é **`git push origin <nome>`**
+
+- Ou se você quiser enviar mais tags **`git push origin --tags`**
