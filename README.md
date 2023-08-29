@@ -233,6 +233,52 @@
 
 - As tags podem ser **enviadas para o repositório de código** sendo compartilhada entre os devs;
 
-- O comando é **`git push origin <nome>`**
+- O comando é **`git push origin <nome>`**;
 
-- Ou se você quiser enviar mais tags **`git push origin --tags`**
+- Ou se você quiser enviar mais tags **`git push origin --tags`**;
+
+## Encontrando branches
+
+- Branches novos são criados a todo tempo e **o git pode não estar mapeando ele**;
+
+- Com o comando **`git fetch`** você é atualizado de todos os branches e tags que ainda não estão reconhecidos;
+
+- Este comando é útil para utilizar o branch de algum outro dev do time;
+
+## Recebendo alterações
+
+- O comando **`git pull`** serve para recebermos atualizações do repositório remoto;
+
+- Cada branch pode ser atualizado com o `git pull`;
+
+- Utilizamos para atualizar a master do repositório como também quando trabalhamos em conjunto e queremos receber as atualizações de um dev;
+
+## O comando **`git push `** faz o inverso do pull, ele envia as alterações para o repositório remoto;
+
+- Serve também para **enviar as atualizações de um branch específico** para um outro dev;
+
+- Ou quando terminamos uma tarefa e precisamos enviar ao repositório;
+
+## Utilizando o remote
+
+- Com o **`git remote`** podemos fazer algumas ações como: adicionar um repositório para trackear ou remover;
+
+- Quando criamos um repositório remoto, adicionamos ele ao git com **`git remote add origin <link>`;
+
+## Trabalhando com submódulos
+
+- Submódulo é a maneira que temos de possuir **dois ou mais projetos em um só repositório**;
+
+- Podemos adicionar uma dependência ao nosso projeto atual, porém mantendo suas estruturas separadas;
+
+- Para adicionar o submódulo utilizamos o comando **`git submodule add <repositório>`**
+
+- Para verificar os submódulos o comando é **`git submodule`**
+
+## Atualizando submódulos
+
+- Para atualizar um submódulo primeiro devemos **commitar as mudanças**;
+
+- E para enviar para o repo do submódulo utilizamos **`git push --recurse-submodules=on-demand`**
+
+- Este fluxo fará a atualização apenas do submódulo;
