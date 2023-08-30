@@ -316,3 +316,76 @@
 - Ou seja, todos que você não **utilizou `git add`**;
 
 - Utilizado para arquivos que são **gerados automaticamente**, por exemplo, e atrapalham a visualização do que é realmente importante;
+
+## Otimizando o repositório
+
+- O comando **`git gc`** é uma abreviação para **garbage collector**;
+
+- Ele identifica arquivos que **não são mais necessários e os exclui;
+
+- Isso fará com que o repositório seja otimizado em questões de **performance**
+
+## Checando a integridade de arquivos
+
+- O comando **`git fsck`** é uma abreviação de File System Check;
+
+- Esta instrução verifica a integridade de arquivos e sua conectividade;
+
+- Verificando assim possíveis **corrupções em arquivos**;
+
+- **Comando de rotina**, utilizado para ver se está tudo certo com nossos arquivos;
+
+## Reflog
+
+- o **`git reflog`** vai mapear todos os seus passos no repositório, até uma mudança de branch é inserida neste log;
+
+- Já o **`git log`**, que vimos anteriormente, apenas armazena os commits de um branch;
+
+- Os **reflogs ficam salvos até expirar**, o tempo de expiração padrão é de 30 dias;
+
+## Transformando o repositório para arquivo
+
+- Com o comando **`git archive`** podemos transformar o repositório em um arquivo compactado, por exemplo;
+
+- O comando é **`git archive --format zip --output master_files.zip master`**;
+
+- E então a master vai estar zipada no arquivo master_files.zip
+
+## A importância do commit
+
+- **O problema:** commits sem sentido atrapalham o projeto;
+
+- Precisamos padronizar os commits, para que o projeto cresça de forma saudável também no versionamento, isso ajuda em:
+
+- Review do **Pull Request**
+
+- Melhoria dos logs em **`git log`**;
+
+- Manutenção do projeto (voltar o código, por exemplo);
+
+## Branches com commits ruins
+
+- Há uma solução chamada **private branches**;
+
+- Onde criamos branches que **não serão compartilhados no
+repositório**, então podemos colocar qualquer commit;
+
+- Ao fim da solução do problema podemos fazer um **rebase**;
+
+- O comando será: **`git rebase <atual> <funcionalidade> -i`**
+
+- Escolhemos os branches para excluir (**squash**) e renomear com
+(**reword**);
+
+## Boas mensagens de commit
+
+- Separar **assunto** do corpo da mensagem;
+
+- Assunto com no **máximo 50 caracteres**
+
+- Assunto com **letra inicial maiúscula**;
+
+- Corpo com no **máximo 72 caracteres**;
+
+- Explicar o **porque e como** do commit, e não como o código foi escrito
+
